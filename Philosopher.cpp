@@ -23,11 +23,11 @@ void test(int phnum)
      {
 	state[phnum] = EATING;
 
-	srand(time(NULL));
-	int i;
-	i = rand() % 1000000 + 1;
+	//srand(time(NULL));
+	//int i;
+	//i = rand() % 1000000 + 1;
 		
-	usleep(i);
+	usleep(100000);
 
 	printf("Philosopher %d takes fork %d and %d\n", phnum + 1, LEFT + 1, phnum + 1);
 
